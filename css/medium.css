@@ -1,0 +1,9 @@
+@import url("small.css");
+
+.heading-banner h1 {
+  font-size:3rem;
+}
+
+.heading-banner p {
+  font-size:2rem;
+}
