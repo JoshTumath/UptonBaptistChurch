@@ -1,1 +1,20 @@
 @import url("medium.css");
+
+header h1 {
+  margin:0;
+  float:left;
+}
+
+header nav {
+  float:right;
+}
+
+header nav li {
+  width:auto;
+}
+
+header :link,
+header :visited {
+  padding:0 2rem;
+  line-height:5rem;
+}

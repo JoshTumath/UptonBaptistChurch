@@ -1,5 +1,9 @@
 @import url("small.css");
 
+header nav li {
+  width:25%;
+}
+
 .heading-banner h1 {
   font-size:3rem;
 }

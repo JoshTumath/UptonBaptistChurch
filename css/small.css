@@ -1,9 +1,71 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,400italic,200");
 
+/*******************************************************************************
+ * Structure
+ ******************************************************************************/
 body {
   margin:0;
+  font-family:"Source Sans Pro", Arial, sans-serif;
 }
 
+/*
+ * Header
+ */
+header {
+  background:white;
+  overflow:hidden;
+}
+
+header h1 {
+  margin:1rem 0 0.5rem;
+}
+
+header nav ul {
+  margin:0;
+  padding:0;
+}
+
+header nav li {
+  display:block;
+  float:left;
+  width:50%;
+}
+
+header :link,
+header :visited {
+  display:block;
+  font-size:1rem;
+  font-weight:bold;
+  line-height:3rem;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  color:grey;
+  transition:color 200ms;
+}
+
+header :link:hover,
+header :visited:hover {
+  color:black;
+}
+
+header a object,
+header a img {
+  height:3rem;
+  vertical-align:middle;
+}
+
+/*
+ * Footer
+ */
+footer {
+  background:#333333;
+  color:white;
+}
+ 
+/*******************************************************************************
+ * Content
+ ******************************************************************************/
 .heading-banner {
   background:#333333;
   text-align:center;
