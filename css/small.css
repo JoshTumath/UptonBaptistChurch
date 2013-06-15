@@ -5,6 +5,7 @@
  ******************************************************************************/
 body {
   margin:0;
+  background:url('../images/background.jpg') #E9EAE5;
   font-family:"Source Sans Pro", Arial, sans-serif;
 }
 
@@ -17,6 +18,7 @@ header {
 }
 
 header h1 {
+  margin:16px 0 8px; /* IE8 */
   margin:1rem 0 0.5rem;
 }
 
@@ -34,10 +36,9 @@ header nav li {
 header :link,
 header :visited {
   display:block;
-  border:0.5rem solid white;
+  font-size:16px; /* IE8 */
   font-size:1rem;
   font-weight:bold;
-  line-height:2rem;
   text-align:center;
   text-decoration:none;
   text-transform:uppercase;
@@ -47,51 +48,174 @@ header :visited {
 header nav :link,
 header nav :visited {
   background:white;
+  border:8px solid white; /* IE8 */
+  border:0.5rem solid white;
+  line-height:32px; /* IE8 */
+  line-height:2rem;
   transition:background-color 200ms, color 200ms;
 }
 
 header nav :link:hover,
-header nav :visited:hover {
+header nav :visited:hover,
+header nav :link:focus,
+header nav :visited:focus {
   background:#4488CC;
   color:white;
 }
 
-header a object,
+header nav :link:active,
+header nav :visited:active {
+  background:#4488CC;
+  color:white;
+}
+
 header a img {
+  height:48px; /* IE8 */
   height:3rem;
   vertical-align:middle;
+  border:none;
 }
 
 /*
  * Footer
  */
 footer {
+  padding:16px; /* IE8 */
+  padding:1rem;
   background:#333333;
+  font-size:13px; /* IE8 */
+  font-size:0.8125rem;
   color:white;
+}
+
+footer p {
+  margin:0;
+}
+
+footer address {
+  padding:0 0 16px; /* IE8 */
+  padding:0 0 1rem;
+  overflow:hidden;
+  font-style:inherit;
+}
+
+footer address p {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  width:50%;
+}
+
+#copyright {
+  padding:16px 0 0; /* IE8 */
+  padding:1rem 0 0;
+  border-top:thin solid rgba(255, 255, 255, 0.5);
 }
  
 /*******************************************************************************
  * Content
  ******************************************************************************/
+main p {
+  margin:0;
+}
+
+main p + p {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+}
+
+/*
+ * Heading banner
+ */
 .heading-banner {
-  background:#333333;
+  padding:16px; /* IE8 */
+  padding:1rem;
+  background:#666666;
   text-align:center;
   color:white;
 }
 
-.heading-banner h1,
-.heading-banner p {
+.heading-banner > h1 {
   margin:0;
-  font-family:"Source Sans Pro", Arial, sans-serif;
-}
-
-.heading-banner h1 {
-  padding:8% 8% 0;
+  font-size:40px; /* IE8 */
   font-size:2.5rem;
 }
 
-.heading-banner p {
-  padding:0 8% 8%;
+.heading-banner > p {
+  font-size:24px; /* IE8 */
+  font-size:1.5rem;
+  font-weight:200;
+}
+
+#motto-text {
+  margin:16px -16px -16px; /* IE8 */
+  margin:1rem -1rem -1rem;
+  padding:8px 16px; /* IE8 */
+  padding:0.5rem 1rem;
+  overflow:hidden;
+  background:#333333;
+  font-size:13px; /* IE8 */
+  font-size:0.8125rem;
+  text-align:left;
+}
+
+#motto-text h1 {
+  margin:0;
+  font-size:16px; /* IE8 */
+  font-size:1rem;
+  font-weight:200;
+}
+
+#motto-text blockquote {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  float:left;
+  margin:0;
+  padding:0 8px 0 0; /* IE8 */
+  padding:0 0.5rem 0 0;
+  width:60%;
+  border-right:thin solid rgba(255, 255, 255, 0.5);
+  font-style:italic;
+}
+
+#motto-text p {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  float:right;
+  padding:0 0 0 8px; /* IE8 */
+  padding:0 0 0 0.5rem;
+  width:40%;
+}
+
+/*
+ * Promos
+ */
+.promos section {
+  margin:16px; /* IE8 */
+  margin:1rem;
+  padding:16px; /* IE8 */
+  padding:1rem;
+  height:256px; /* IE8 */
+  height:16rem;
+  background:white;
+  box-shadow:0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.promos section > a {
+  display:block;
+  margin:-16px; /* IE8 */
+  margin:-1rem;
+  padding:16px; /* IE8 */
+  padding:1rem;
+  height:256px; /* IE8 */
+  height:16rem;
+  text-decoration:inherit;
+  color:inherit;
+}
+
+.promos h1 {
+  margin:0;
+  font-size:24px; /* IE8 */
   font-size:1.5rem;
   font-weight:200;
 }

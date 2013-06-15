@@ -1,15 +1,22 @@
 @import url("medium.css");
 
-body {
-  background:url('../images/background.jpg') #E9EAE5;
-}
-
+/*******************************************************************************
+ * Structure
+ ******************************************************************************/
+/*
+ * Header
+ */
 header h1 {
-  margin:0;
+  margin:0 24px; /* IE8 */
+  margin:0 1.5rem;
   float:left;
+  line-height:80px; /* IE8 */
+  line-height:5rem;
 }
 
 header nav {
+  margin:0 12px; /* IE8 */
+  margin:0 0.75rem;
   float:right;
 }
 
@@ -19,8 +26,110 @@ header nav li {
 
 header nav :link,
 header nav :visited {
+  border:24px solid white; /* IE8 */
   border:1.5rem solid white;
+  border-right-width:12px; /* IE8 */
   border-right-width:0.75rem;
+  border-left-width:12px; /* IE8 */
   border-left-width:0.75rem;
+  padding:0 16px; /* IE8 */
   padding:0 1rem;
+}
+
+/*
+ * Footer
+ */
+footer {
+  margin-right:0;
+  margin-left:0;
+}
+
+/*
+ * Footer
+ */
+footer address p {
+  float:none;
+  width:20%;
+}
+
+footer address p + p {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+}
+
+footer address:before {
+  width:80%;
+  height:128px; /* IE8 */
+  height:16rem;
+    background-image:url("../images/map.png");
+}
+
+@media screen and (min-resolution:144dpi) {
+  footer address:before {
+    background-image:url("../images/map@2x.png");
+  }
+}
+
+/*******************************************************************************
+ * Content
+ ******************************************************************************/
+.wrapper {
+  margin-right:auto;
+  margin-left:auto;
+  width:976px;
+}
+
+/*
+ * Heading banner
+ */
+.heading-banner {
+  padding:0;
+  height:544px; /* IE8 */
+  height:34rem;
+  height:90vh;
+  height:calc(100vh - 5rem);
+}
+
+.heading-banner > h1,
+.heading-banner > p {
+  position:absolute;
+  right:8%;
+  left:8%;
+}
+
+.heading-banner > h1 {
+  bottom:50%;
+}
+
+.heading-banner > p {
+  top:50%;
+}
+
+#motto-text {
+  position:absolute;
+  right:24px; /* IE8 */
+  right:1.5rem;
+  bottom:0;
+  margin:0;
+  width:12rem;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * Promos
+ */
+.promos {
+  padding:0 0 16px; /* IE8 */
+  padding:0 0 1rem;
+}
+
+.promos section {
+  display:inline-block;
+  margin:1rem 16px 0 0;
+  margin:16px 16px 0 0;
+  width:282.666px;
+}
+
+.promos section:nth-of-type(3n) {
+  margin-right:0;
 }
