@@ -59,7 +59,7 @@ footer address p + p {
 
 footer address:before {
   width:80%;
-  height:128px; /* IE8 */
+  height:256px; /* IE8 */
   height:16rem;
     background-image:url("../images/map.png");
 }
