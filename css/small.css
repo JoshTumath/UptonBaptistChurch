@@ -129,7 +129,11 @@ main p + p {
 .heading-banner {
   padding:16px; /* IE8 */
   padding:1rem;
-  background:#666666;
+  background-image:url("../images/header.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:#666666;
   text-align:center;
   color:white;
 }
