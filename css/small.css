@@ -52,7 +52,7 @@ header nav :visited {
   border:0.5rem solid white;
   line-height:32px; /* IE8 */
   line-height:2rem;
-  transition:background-color 200ms, color 200ms;
+  transition:200ms;
 }
 
 header nav :link:hover,
@@ -65,8 +65,7 @@ header nav :visited:focus {
 
 header nav :link:active,
 header nav :visited:active {
-  background:#4488CC;
-  color:white;
+  transform:scale(0.9);
 }
 
 header a img {
