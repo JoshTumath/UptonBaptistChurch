@@ -34,19 +34,26 @@ header nav li {
 header :link,
 header :visited {
   display:block;
+  border:0.5rem solid white;
   font-size:1rem;
   font-weight:bold;
-  line-height:3rem;
+  line-height:2rem;
   text-align:center;
   text-decoration:none;
   text-transform:uppercase;
   color:grey;
-  transition:color 200ms;
 }
 
-header :link:hover,
-header :visited:hover {
-  color:black;
+header nav :link,
+header nav :visited {
+  background:white;
+  transition:background-color 200ms, color 200ms;
+}
+
+header nav :link:hover,
+header nav :visited:hover {
+  background:#4488CC;
+  color:white;
 }
 
 header a object,
