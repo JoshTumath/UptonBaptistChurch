@@ -190,6 +190,10 @@ main p + p {
   width:40%;
 }
 
+#motto-text a {
+  color:white;
+}
+
 /*
  * Promos
  */
