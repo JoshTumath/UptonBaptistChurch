@@ -32,6 +32,23 @@ footer address:before {
   content:"";
 }
 
+#copyright {
+  overflow:hidden;
+}
+
+#copyright p {
+  width:50%;
+}
+
+#copyright > :first-child {
+  float:left;
+}
+
+#copyright > :last-child {
+  float:right;
+  text-align:right;
+}
+
 /*******************************************************************************
  * Content
  ******************************************************************************/

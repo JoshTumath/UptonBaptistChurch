@@ -129,6 +129,7 @@ footer address:before {
   margin:1rem 16px 0 0;
   margin:16px 16px 0 0;
   width:282.666px;
+  vertical-align:middle;
 }
 
 .promos section:nth-of-type(3n) {
