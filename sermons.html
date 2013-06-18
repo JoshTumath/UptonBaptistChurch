@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Sermons - Upton Baptist Church</title>
+    
+    
+    <!-- Non-standard way of getting smartphones and tablets to work. -->
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- html5shiv helps browsers like IE8 and below to have basic support for
+         new HTML5 semantic elements. -->
+    <script src="js/html5shiv.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/small.css" media="screen and (max-width:532px)">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:533px) and (max-width:975px)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:976px)">
+    
+    <!-- IE8 and below don't support device scaling. -->
+    <!--[if lt IE 9]><link rel="stylesheet" href="css/large.css"><![endif]-->
+  </head>
+  
+  <body>
+    <header>
+      <h1>
+        <a href="index.html">
+          <img src="images/logo.png" width="90" height="48" alt="Upton Baptist Church">
+        </a>
+      </h1>
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="week.html">Week</a>
+          </li>
+          <li>
+            <a href="sermons.html">Sermons</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      
+      <section class="wrapper">
+        <h1>Sermons</h1>
+        
+        <div id="sermon-player">
+          <p>
+            <strong>Now playing…</strong>
+            <span id="sermon-title">Lorem ipsum</span>
+            <span id="sermon-passage">John 1:1</span>
+            <span id="sermon-speaker">Jim Waterworth</span>
+          </p>
+          
+          <audio controls>
+            <source src="http://www.ubc.org.uk/sermons/soundfiles/RayTibbs_John9_1to41_16June2013(am).mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer>
+      <div class="wrapper">
+        <address itemscope itemtype="http://schema.org/Church">
+          <p>
+            <strong>Telephone:</strong><br>
+            <span itemprop="telephone">01244 377142</span>
+          </p>
+          
+          <p>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <strong>Address:</strong><br>
+              <span itemprop="name">Upton Baptist Church</span><br>
+              <span itemprop="streetAddress">Flag Lane South</span><br>
+              <span itemprop="addressLocality">Chester</span><br>
+              <span itemprop="postalCode">CH2 1LB</span>
+            </span>
+          </p>
+        </address>
+        
+        <div id="copyright">
+          <p>Copyright © 2013 Upton Baptist Church</p>
+          
+          <p>Registered Charity No. 1138148</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

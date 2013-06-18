@@ -74,6 +74,8 @@ footer address:before {
  * Content
  ******************************************************************************/
 .wrapper {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
   margin-right:auto;
   margin-left:auto;
   width:976px;
@@ -134,4 +136,46 @@ footer address:before {
 
 .promos section:nth-of-type(3n) {
   margin-right:0;
+}
+
+/*
+ * Sermons
+ */
+#sermon-player {
+  position:relative;
+  padding:0;
+  height:350px;
+}
+
+#sermon-player p {
+  padding-top:64px; /* IE8 */
+  padding-top:4rem;
+  padding-bottom:0;
+}
+
+#sermon-title {
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:56px; /* IE8 */
+  font-size:3.5rem;
+}
+
+#sermon-passage {
+  font-size:24px; /* IE8 */
+  font-size:1.25rem;
+}
+
+#sermon-speaker {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+  font-size:24px; /* IE8 */
+  font-size:1.5rem;
+  font-weight:200;
+}
+
+#sermon-player audio {
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
 }

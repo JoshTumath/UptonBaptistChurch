@@ -52,6 +52,11 @@ footer address:before {
 /*******************************************************************************
  * Content
  ******************************************************************************/
+main > section > h1 {
+  font-size:32px; /* IE8 */
+  font-size:2rem;
+}
+
 /*
  * Heading banner
  */
@@ -78,4 +83,19 @@ footer address:before {
   margin-top:4rem;
   margin-bottom:-64px; /* IE8 */
   margin-bottom:-4rem;
+}
+
+/*
+ * Sermons
+ */
+#sermon-player p {
+  padding-top:48px; /* IE8 */
+  padding-top:3rem;
+  padding-bottom:48px; /* IE8 */
+  padding-bottom:3rem;
+}
+
+#sermon-title {
+  font-size:32px; /* IE8 */
+  font-size:2rem;
 }
