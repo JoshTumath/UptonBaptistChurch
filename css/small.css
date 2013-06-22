@@ -87,6 +87,10 @@ footer {
   color:white;
 }
 
+footer a {
+  color:inherit;
+}
+
 footer p {
   margin:0;
 }
@@ -98,11 +102,23 @@ footer address {
   font-style:inherit;
 }
 
+footer address > div {
+  float:left;
+  width:50%;
+}
+
 footer address p {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
-  float:left;
-  width:50%;
+}
+
+footer address p + p {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+}
+
+footer address p strong {
+  display:block;
 }
 
 #copyright {
@@ -114,8 +130,21 @@ footer address p {
 /*******************************************************************************
  * Content
  ******************************************************************************/
-p {
+p, dl {
   margin:0;
+}
+
+dt {
+  font-weight:bold;
+}
+
+dd {
+  margin:0;
+}
+
+dd + dt {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
 }
 
 .prose {
@@ -381,8 +410,10 @@ section.prose > h1 {
 
 #sermons .sermon-title {
   display:block;
+  overflow:hidden;
   font-size:16px; /* IE8 */
   font-size:1rem;
+  text-overflow:ellipse;
 }
 
 #sermons .sermon-speaker:before,

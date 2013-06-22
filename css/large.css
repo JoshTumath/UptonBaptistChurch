@@ -51,12 +51,12 @@ footer > div {
   width:976px;
 }
 
-footer address p {
+footer address > div {
   float:none;
   width:20%;
 }
 
-footer address p + p {
+footer address > div + div {
   margin-top:16px; /* IE8 */
   margin-top:1rem;
 }
