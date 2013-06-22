@@ -51,27 +51,69 @@
     
     <main>
       
-      <section class="wrapper">
+      
+      <section class="prose">
         <h1>Sermons</h1>
         
         <div id="sermon-player">
-          <p>
+          <p hidden="">
             <strong>Now playing…</strong>
-            <span id="sermon-title">Lorem ipsum</span>
-            <span id="sermon-passage">John 1:1</span>
-            <span id="sermon-speaker">Jim Waterworth</span>
+            <span id="sermon-player-title">Lorem ipsum</span>
+            <span id="sermon-player-passage">John 1:1</span>
+            <span id="sermon-player-speaker">Jim Waterworth</span>
           </p>
           
-          <audio controls>
+          <audio controls hidden="">
             <source src="http://www.ubc.org.uk/sermons/soundfiles/RayTibbs_John9_1to41_16June2013(am).mp3" type="audio/mp3">
           </audio>
         </div>
       </section>
       
+      <section>
+        <ol id="sermons">
+          <li>
+            <p class="morning">
+              <a href="http://www.ubc.org.uk/sermons/soundfiles/RayTibbs_John9_1to41_16June2013(am).mp3">
+                <span class="sermon-title">Do you believe in the Son of Man?</span>
+                <span class="sermon-passage">John 9:1-41</span>
+                <span class="sermon-speaker">Ray Tibbs</span>
+                <span class="sermon-date"><time datetime="2013-06-16">16/6/2013</time></span>
+              </a>
+            </p><p class="evening">
+              <a href="http://www.ubc.org.uk/sermons/soundfiles/DaveStott_1Peter1_1to12_16June2013(pm).mp3">
+                <span class="sermon-title">A Special People</span>
+                <span class="sermon-passage">1 Peter 1:1-12</span>
+                <span class="sermon-speaker">Dave Stott</span>
+                <span class="sermon-date"><time datetime="2013-06-16">16/6/2013</time></span>
+              </a>
+            </p>
+          </li>
+          
+          <li>
+            <p class="morning">
+              <a href="http://www.ubc.org.uk/sermons/soundfiles/JulianEisner_Luke10_1to20_09June2013(am).mp3">
+                <span class="sermon-title">Serving the Lord</span>
+                <span class="sermon-passage">Luke 10:1-20</span>
+                <span class="sermon-speaker">Julian Eisner</span>
+                <span class="sermon-date"><time datetime="2013-06-09">9/6/2013</time></span>
+              </a>
+            </p><p class="evening">
+              <a href="http://www.ubc.org.uk/sermons/soundfiles/JimWaterworth_Acts2_1to13_09June2013(pm).mp3">
+                <span class="sermon-title">A Sound from Heaven</span>
+                <span class="sermon-passage">Acts 2:1-13</span>
+                <span class="sermon-speaker">Jim Waterworth</span>
+                <span class="sermon-date"><time datetime="2013-06-09">9/6/2013</time></span>
+              </a>
+            </p>
+          </li>
+        </ol>
+      </section>
+      
+      
     </main>
     
     <footer>
-      <div class="wrapper">
+      <div>
         <address itemscope itemtype="http://schema.org/Church">
           <p>
             <strong>Telephone:</strong><br>

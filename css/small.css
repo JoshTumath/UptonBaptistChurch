@@ -40,7 +40,7 @@ header :visited {
   font-size:1rem;
   font-weight:bold;
   text-align:center;
-  text-decoration:none;
+  text-decoration:inherit;
   text-transform:uppercase;
   color:grey;
 }
@@ -114,16 +114,11 @@ footer address p {
 /*******************************************************************************
  * Content
  ******************************************************************************/
-main p {
+p {
   margin:0;
 }
 
-main p + p {
-  margin-top:16px; /* IE8 */
-  margin-top:1rem;
-}
-
-main > section {
+.prose {
   margin:16px 0; /* IE8 */
   margin:1rem 0;
   padding:16px; /* IE8 */
@@ -132,7 +127,7 @@ main > section {
   box-shadow:0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 
-main > section > h1 {
+section.prose > h1 {
   margin:0 0 16px; /* IE8 */
   margin:0 0 1rem;
   font-size:24px; /* IE8 */
@@ -141,13 +136,18 @@ main > section > h1 {
   text-align:center;
 }
 
+.prose p + p {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+}
+
 /*
  * Heading banner
  */
 .heading-banner {
   padding:16px; /* IE8 */
   padding:1rem;
-  background-image:url("../images/header.jpg");
+  background-image:url("../images/banners/church@small.jpg");
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
@@ -160,6 +160,7 @@ main > section > h1 {
   font-size:40px; /* IE8 */
   font-size:2.5rem;
   text-align:center;
+  text-shadow:0 0 1em black;
 }
 
 .heading-banner > p {
@@ -167,6 +168,7 @@ main > section > h1 {
   font-size:1.5rem;
   font-weight:200;
   text-align:center;
+  text-shadow:0 0 0.25em black;
 }
 
 #motto-text {
@@ -237,8 +239,17 @@ main > section > h1 {
   padding:1rem;
   height:256px; /* IE8 */
   height:16rem;
+  background:white;
   text-decoration:inherit;
   color:inherit;
+  transition:background-color 200ms;
+}
+
+.promos section > :link:hover,
+.promos section > :visited:hover,
+.promos section > :link:focus,
+.promos section > :visited:focus {
+  background:#CEE0F2;
 }
 
 .promos h1 {
@@ -278,9 +289,9 @@ main > section > h1 {
  */
 #sermon-player {
   position:relative;
-  margin:16px -16px; /* IE8 */
-  margin:1rem -1rem;
-  background-image:url("../images/header.jpg");
+  margin:16px -16px -16px; /* IE8 */
+  margin:1rem -1rem -1rem;
+  background-image:url("../images/banners/pulpit@small.jpg");
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
@@ -306,17 +317,17 @@ main > section > h1 {
   padding:0 1rem;
 }
 
-#sermon-title {
+#sermon-player-title {
   font-size:24px; /* IE8 */
   font-size:1.5rem;
   font-weight:200;
 }
 
-#sermon-passage {
+#sermon-player-passage {
   font-weight:200;
 }
 
-#sermon-speaker {
+#sermon-player-speaker {
   margin-top:8px; /* IE8 */
   margin-top:0.5rem;
   font-size:20px; /* IE8 */
@@ -326,4 +337,55 @@ main > section > h1 {
 
 #sermon-player audio {
   width:100%;
+}
+
+#sermons {
+  margin:16px 0; /* IE8 */
+  margin:1rem 0;
+  padding:0;
+}
+
+#sermons li {
+  display:block;
+  margin:0;
+}
+
+#sermons li + li,
+#sermons p + p {
+  margin-top:16px; /* IE8 */
+  margin-top:1rem;
+}
+
+#sermons p {
+  font-size:13px; /* IE8 */
+  font-size:0.8125rem;
+}
+
+#sermons a {
+  display:block;
+  padding:8px 16px; /* IE8 */
+  padding:0.5rem 1rem;
+  background:white;
+  box-shadow:0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  text-decoration:inherit;
+  color:inherit;
+  transition:background-color 200ms;
+}
+
+#sermons :link:hover,
+#sermons :visited:hover,
+#sermons :link:focus,
+#sermons:visited:focus {
+  background:#CEE0F2;
+}
+
+#sermons .sermon-title {
+  display:block;
+  font-size:16px; /* IE8 */
+  font-size:1rem;
+}
+
+#sermons .sermon-speaker:before,
+#sermons .sermon-date:before {
+  content:"∙ ";
 }

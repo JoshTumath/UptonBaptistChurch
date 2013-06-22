@@ -52,7 +52,12 @@ footer address:before {
 /*******************************************************************************
  * Content
  ******************************************************************************/
-main > section > h1 {
+.prose {
+  margin-right:1rem;
+  margin-left:1rem;
+}
+
+section.prose > h1 {
   font-size:32px; /* IE8 */
   font-size:2rem;
 }
@@ -66,6 +71,7 @@ main > section > h1 {
   padding-top:4rem;
   padding-bottom:64px; /* IE8 */
   padding-bottom:4rem;
+  background-image:url("../images/banners/church@medium.jpg");
 }
 
 .heading-banner > h1 {
@@ -88,6 +94,10 @@ main > section > h1 {
 /*
  * Sermons
  */
+#sermon-player {
+  background-image:url("../images/banners/pulpit@medium.jpg");
+}
+
 #sermon-player p {
   padding-top:48px; /* IE8 */
   padding-top:3rem;
@@ -95,7 +105,12 @@ main > section > h1 {
   padding-bottom:3rem;
 }
 
-#sermon-title {
+#sermon-player-title {
   font-size:32px; /* IE8 */
   font-size:2rem;
+}
+
+#sermons {
+  margin-right:1rem;
+  margin-left:1rem;
 }

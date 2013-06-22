@@ -44,9 +44,13 @@ footer {
   margin-left:0;
 }
 
-/*
- * Footer
- */
+footer > div {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:auto;
+  width:976px;
+}
+
 footer address p {
   float:none;
   width:20%;
@@ -73,7 +77,7 @@ footer address:before {
 /*******************************************************************************
  * Content
  ******************************************************************************/
-.wrapper {
+.prose {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   margin-right:auto;
@@ -91,6 +95,7 @@ footer address:before {
   height:90vh;
   height:calc(100vh - 5rem);
   background-attachment:fixed;
+  background-image:url("../images/banners/church@large.jpg");
 }
 
 .heading-banner > h1,
@@ -122,8 +127,13 @@ footer address:before {
  * Promos
  */
 .promos {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin-right:auto;
+  margin-left:auto;
   padding:0 0 16px; /* IE8 */
   padding:0 0 1rem;
+  width:976px;
 }
 
 .promos section {
@@ -144,7 +154,8 @@ footer address:before {
 #sermon-player {
   position:relative;
   padding:0;
-  height:350px;
+  height:352px;
+  background-image:url("../images/banners/pulpit@large.jpg");
 }
 
 #sermon-player p {
@@ -153,19 +164,19 @@ footer address:before {
   padding-bottom:0;
 }
 
-#sermon-title {
+#sermon-player-title {
   overflow:hidden;
   white-space:nowrap;
   font-size:56px; /* IE8 */
   font-size:3.5rem;
 }
 
-#sermon-passage {
+#sermon-player-passage {
   font-size:24px; /* IE8 */
   font-size:1.25rem;
 }
 
-#sermon-speaker {
+#sermon-player-speaker {
   margin-top:16px; /* IE8 */
   margin-top:1rem;
   font-size:24px; /* IE8 */
@@ -178,4 +189,37 @@ footer address:before {
   right:0;
   bottom:0;
   left:0;
+}
+
+#sermons {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin-right:auto;
+  margin-left:auto;
+  width:976px;
+}
+
+#sermons li {
+  /* overflow:hidden; */
+}
+
+#sermons p {
+  display:inline-block;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width:50%;
+}
+
+#sermons p + p {
+  margin:0;
+}
+
+#sermons .morning {
+  padding-right:8px; /* IE8 */
+  padding-right:0.5rem;
+}
+
+#sermons .evening {
+  padding-left:8px; /* IE8 */
+  padding-left:0.5rem;
 }
