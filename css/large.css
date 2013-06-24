@@ -82,10 +82,10 @@ footer address:before {
   width:976px;
 }
 
-.times small {
+/*.times small {
   display:inline;
   margin:0;
-}
+}*/
 
 /*
  * Subnavigation
@@ -108,7 +108,7 @@ footer address:before {
   width:240px;
   border:none;
   box-shadow:0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
-  text-align:inherit;
+  text-align:left;
 }
 
 .subcontent nav li {

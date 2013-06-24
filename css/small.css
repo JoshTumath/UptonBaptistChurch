@@ -49,7 +49,7 @@ header nav a {
   background:white;
   line-height:32px; /* IE8 */
   line-height:2rem;
-  transition:200ms;
+  transition:background-color 200ms, color 200ms, transform 200ms;
 }
 
 header nav :link:hover,
@@ -144,9 +144,6 @@ dd + dt {
   margin-top:1rem;
 }
 
-:link,
-
-
 .prose {
   margin:16px 0; /* IE8 */
   margin:1rem 0;
@@ -176,6 +173,19 @@ section.prose h2 {
 .prose p + p {
   margin-top:16px; /* IE8 */
   margin-top:1rem;
+}
+
+.prose :link,
+.prose :visited {
+  color:#336699;
+  transition:color 100ms;
+}
+
+.prose :link:hover,
+.prose :visited:hover,
+.prose :link:focus,
+.prose :visited:focus {
+  color:#4488CC;
 }
 
 .image-banner {
