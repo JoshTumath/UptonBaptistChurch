@@ -1,5 +1,3 @@
-@import url("medium.css");
-
 /*******************************************************************************
  * Structure
  ******************************************************************************/
@@ -20,18 +18,17 @@ header nav {
   float:right;
 }
 
+header nav ul {
+  padding:0;
+}
+
 header nav li {
   width:auto;
 }
 
-header nav :link,
-header nav :visited {
-  border:24px solid white; /* IE8 */
-  border:1.5rem solid white;
-  border-right-width:12px; /* IE8 */
-  border-right-width:0.75rem;
-  border-left-width:12px; /* IE8 */
-  border-left-width:0.75rem;
+header nav a {
+  margin:24px 12px; /* IE8 */
+  margin:1.5rem 0.75rem;
   padding:0 16px; /* IE8 */
   padding:0 1rem;
 }
@@ -53,7 +50,7 @@ footer > div {
 
 footer address > div {
   float:none;
-  width:20%;
+  width:256px;
 }
 
 footer address > div + div {
@@ -62,10 +59,10 @@ footer address > div + div {
 }
 
 footer address:before {
-  width:80%;
-  height:256px; /* IE8 */
-  height:16rem;
-    background-image:url("../images/map.png");
+  width:720px;
+  height:224px; /* IE8 */
+  height:14rem;
+  background-image:url("../images/map.png");
 }
 
 @media screen and (min-resolution:144dpi) {
@@ -83,6 +80,55 @@ footer address:before {
   margin-right:auto;
   margin-left:auto;
   width:976px;
+}
+
+.times small {
+  display:inline;
+  margin:0;
+}
+
+/*
+ * Subnavigation
+ */
+.subcontent {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin-right:auto;
+  margin-left:auto;
+  width:976px;
+}
+
+.subcontent nav {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:16px 0;
+  padding:1rem 0;
+  float:left;
+  width:240px;
+  border:none;
+  box-shadow:0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  text-align:inherit;
+}
+
+.subcontent nav li {
+  float:none;
+  width:auto;
+}
+
+.subcontent nav a {
+  padding-right:16px; /* IE8 */
+  padding-right:1rem;
+  padding-left:16px; /* IE8 */
+  padding-left:1rem;
+}
+
+.subcontent > div {
+  margin:0 0 0 256px;
+}
+
+.subcontent section {
+  width:auto;
 }
 
 /*
@@ -197,10 +243,6 @@ footer address:before {
   margin-right:auto;
   margin-left:auto;
   width:976px;
-}
-
-#sermons li {
-  /* overflow:hidden; */
 }
 
 #sermons p {

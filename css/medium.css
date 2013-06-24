@@ -1,5 +1,3 @@
-@import url("small.css");
-
 /*******************************************************************************
  * Structure
  ******************************************************************************/
@@ -60,6 +58,18 @@ footer address:before {
 section.prose > h1 {
   font-size:32px; /* IE8 */
   font-size:2rem;
+}
+
+.times small {
+  margin-left:80px; /* IE8 */
+  margin-left:5rem;
+}
+
+/*
+ * Subnavigation
+ */
+main nav a {
+  height:auto;
 }
 
 /*
