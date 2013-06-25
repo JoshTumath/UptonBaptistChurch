@@ -60,6 +60,16 @@ section.prose > h1 {
   font-size:2rem;
 }
 
+section.prose > h2 {
+  font-size:24px; /* IE8 */
+  font-size:1.5rem;
+}
+
+.subheading {
+  font-size:16px; /* IE8 */
+  font-size:1rem;
+}
+
 .map {
   display:block;
   margin:16px -16px -16px; /* IE8 */
@@ -77,6 +87,23 @@ section.prose > h1 {
 aside.times {
   font-size:16px; /* IE8 */
   font-size:1rem;
+}
+
+.profile {
+  overflow:hidden;
+}
+
+.profile img {
+  margin:0 16px 16px 0; /* IE8 */
+  margin:0 1rem 1rem 0;
+  float:left;
+  width:128px; /* IE8 */
+  width:6rem;
+  height:auto;
+}
+
+.profile p {
+  margin-left:7rem;
 }
 
 /*

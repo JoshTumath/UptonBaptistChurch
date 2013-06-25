@@ -152,7 +152,7 @@ footer address p strong {
 /*******************************************************************************
  * Content
  ******************************************************************************/
-p, dl {
+p {
   margin:0;
 }
 
@@ -193,6 +193,16 @@ section.prose h2 {
   font-size:20px; /* IE8 */
   font-size:1.25rem;
   font-weight:200;
+}
+
+.subheading {
+  margin:-8px 0 8px; /* IE8 */
+  margin:-0.5rem 0 0.5rem;
+  font-size:13px; /* IE8 */
+  font-size:0.8125rem;
+  font-style:italic;
+  letter-spacing:0.2em;
+  color:grey;
 }
 
 .prose p + p {
@@ -268,6 +278,25 @@ aside.times h2 {
 
 aside.times h2:first-child {
   margin-top:0;
+}
+
+.profile img {
+  display:block;
+  margin:0 auto 8px; /* IE8 */
+  margin:0 auto 0.5rem;
+  height:100px;
+}
+
+blockquote {
+  text-align:justify;
+}
+
+.quote-source {
+  text-align:right;
+}
+
+.quote-source:before {
+  content:"— ";
 }
 
 /*
