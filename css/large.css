@@ -180,6 +180,8 @@ footer address:before {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   margin-right:auto;
+  margin-bottom:-16px; /* IE8 */
+  margin-bottom:-1rem;
   margin-left:auto;
   padding:0 0 16px; /* IE8 */
   padding:0 0 1rem;
@@ -188,8 +190,8 @@ footer address:before {
 
 .promos section {
   display:inline-block;
+  margin:16px 16px 0 0; /* IE8 */
   margin:1rem 16px 0 0;
-  margin:16px 16px 0 0;
   width:282.666px;
   vertical-align:middle;
 }

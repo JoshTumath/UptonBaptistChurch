@@ -21,7 +21,11 @@ body {
 ::selection {
   background:#4488CC;
   color:white;
-} 
+}
+
+[hidden] {
+  display:none;
+}
 
 /*
  * Header
@@ -56,7 +60,7 @@ header a {
   text-align:center;
   text-decoration:inherit;
   text-transform:uppercase;
-  color:grey;
+  color:#666666;
 }
 
 header nav a {

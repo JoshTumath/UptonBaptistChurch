@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/medium.css" media="screen">
     <link rel="stylesheet" href="css/large.css" media="screen">
     <![endif]-->
+    
+    <link rel="shortcut icon" href="images/favicon.png">
   </head>
   
   <body>
