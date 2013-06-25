@@ -1,3 +1,9 @@
+.todo {
+  padding:0 0.1em;
+  background:red;
+  color:white;
+}
+
 /*******************************************************************************
  * Structure
  ******************************************************************************/
@@ -73,6 +79,11 @@ header nav :visited:focus {
 header nav :link:active,
 header nav :visited:active {
   transform:scale(0.9);
+}
+
+header nav :local-link {
+  background:#4488CC;
+  color:white;
 }
 
 header a img {
@@ -173,8 +184,8 @@ section.prose h1 {
 }
 
 section.prose h2 {
-  margin:16px 0 8px; /* IE8 */
-  margin:1rem 0 0.5rem;
+  margin:32px 0 8px; /* IE8 */
+  margin:2rem 0 0.5rem;
   font-size:20px; /* IE8 */
   font-size:1.25rem;
   font-weight:200;
@@ -198,12 +209,24 @@ section.prose h2 {
   color:#4488CC;
 }
 
+.prose aside {
+  margin:16px 0; /* IE8 */
+  margin:1rem 0;
+  padding:16px; /* IE8 */
+  padding:1rem;
+  background:#EFEFEF;
+}
+
 .image-banner {
   display:block;
   margin:16px -16px; /* IE8 */
   margin:1rem -1rem;
   width:100%;
   width:calc(100% + 2rem);
+}
+
+.map {
+  display:none;
 }
 
 .times p + p {
@@ -214,12 +237,33 @@ section.prose h2 {
 .times strong {
   display:inline-block;
   width:80px; /* IE8 */
-  width:5rem;
+  width:5em;
 }
 
 .times small {
   display:block;
   color:grey;
+}
+
+.times h2 {
+  font-weight:bold !important;
+  text-transform:uppercase;
+}
+
+aside.times {
+  font-size:13px; /* IE8 */
+  font-size:0.8125rem;
+}
+
+aside.times h2 {
+  margin:16px 0 0; /* IE8 */
+  margin:1rem 0 0;
+  font-size:16px; /* IE8 */
+  font-size:1rem;
+}
+
+aside.times h2:first-child {
+  margin-top:0;
 }
 
 /*
@@ -244,14 +288,13 @@ main nav ul {
 main nav li {
   display:block;
   float:left;
-  width:33.333%;
+  width:50%;
 }
 
 main nav a {
   display:block;
   padding:8px 0; /* IE8 */
   padding:0.5rem 0;
-  height:2.75em;
   font-weight:200;
   text-decoration:inherit;
   color:inherit;
@@ -267,6 +310,10 @@ main nav :visited:focus {
 
 main nav :link:active,
 main nav :visited:active {
+  background:#4488CC;
+}
+
+main nav :local-link {
   background:#4488CC;
 }
 

@@ -3,9 +3,11 @@
   
   <head>
     <meta charset="utf-8">
-    
-    <title>About us - Upton Baptist Church</title>
-    
+    <!-- #ParentBeginEditable "doctitle" -->
+
+    <title>About</title>
+
+<!-- #ParentEndEditable -->
     
     <!-- Non-standard way of getting smartphones and tablets to work. -->
     <meta name="viewport" content="width=device-width">
@@ -54,56 +56,44 @@
     </header>
     
     <main>
-      
-      
+      <!-- #ParentBeginEditable "body" -->
       <div class="subcontent">
         <nav>
           <ul>
             <li>
-              <a href="about.html">About us</a>
+              <a href="week.html">Weekly programme</a>
             </li>
             <li>
-              <a href="leadership.html">Leadership</a>
+              <a href="sunday-services.html">Sunday services</a>
             </li>
             <li>
-              <a href="beliefs.html">Beliefs</a>
+              <a href="bible-studies.html">Bible studies</a>
             </li>
             <li>
-              <a href="mission.html">Mission</a>
+              <a href="toddler-groups.html">Toddler groups</a>
             </li>
             <li>
-              <a href="history.html">History</a>
+              <a href="children.html">Kids and teenagers</a>
             </li>
             <li>
-              <a href="members.html">Members</a>
+              <a href="art-group.html">Art group</a>
+            </li>
+            <li>
+              <a href="special-events.html">Special events</a>
+            </li>
+            <li>
+              <a href="christianity-explored.html">Christianity Explored</a>
             </li>
           </ul>
         </nav>
         
         <div>
-        <section class="prose">
-          <h1>About us</h1>
-          
-          <img src="images/banners/congregation@large.jpg" alt="" class="image-banner">
-          
-          <p>Upton Baptist Church is an independent baptist church of
-          Bible-believing Christians of all ages. <span class="todo">[general
-          description of our church and what it stands for]</span></p>
-          
-          <p><span class="todo">[summary of our leadership]</span></p>
-          
-          <p><span class="todo">[summary of the kinds of things we focus on like
-          youth work and whatnot]</span></p>
-          
-          <p>Our church can be found on the corner of Flag Lane South and the
-          A41, near Chester Zoo.</p>
-          
-          <iframe width="425" height="350" class="map" src="http://www.google.com/maps?ie=UTF8&amp;t=m&amp;ll=53.221054,-2.882044&amp;spn=0.002248,0.00456&amp;z=17&amp;iwloc=lyrftr:m,10805163727384975758,53.220238,-2.882828&amp;output=embed"></iframe>
-        </section>
+
+
+
         </div>
       </div>
-      
-      
+<!-- #ParentEndEditable -->
     </main>
     
     <footer>

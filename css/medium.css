@@ -60,16 +60,30 @@ section.prose > h1 {
   font-size:2rem;
 }
 
+.map {
+  display:block;
+  margin:16px -16px -16px; /* IE8 */
+  margin:1rem -1rem -1rem;
+  width:100%;
+  width:calc(100% + 2rem);
+  border:none;
+}
+
 .times small {
   margin-left:80px; /* IE8 */
   margin-left:5rem;
 }
 
+aside.times {
+  font-size:16px; /* IE8 */
+  font-size:1rem;
+}
+
 /*
  * Subnavigation
  */
-main nav a {
-  height:auto;
+main nav li {
+  width:33.333%;
 }
 
 /*

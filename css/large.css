@@ -91,6 +91,7 @@ footer address:before {
   margin-right:auto;
   margin-left:auto;
   width:976px;
+  min-height:23em;
 }
 
 .subcontent nav {
@@ -109,6 +110,14 @@ footer address:before {
 .subcontent nav li {
   float:none;
   width:auto;
+}
+
+.subcontent nav li:first-child {
+  margin-bottom:16px; /* IE8 */
+  margin-bottom:1rem;
+  padding-bottom:16px; /* IE8 */
+  padding-bottom:1rem;
+  border-bottom:thin solid lightgrey;
 }
 
 .subcontent nav a {
