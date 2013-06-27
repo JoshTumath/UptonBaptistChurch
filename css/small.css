@@ -223,12 +223,27 @@ section.prose h2 {
   color:#4488CC;
 }
 
-.prose aside {
+.prose aside,
+.prose figure {
   margin:16px 0; /* IE8 */
   margin:1rem 0;
   padding:16px; /* IE8 */
   padding:1rem;
   background:#EFEFEF;
+}
+
+.prose figure {
+  text-align:center;
+}
+
+.prose figure img {
+  vertical-align:middle;
+}
+
+.prose figcaption {
+  margin:8px 0 0;
+  margin:0.5rem 0 0;
+  text-align:left;
 }
 
 .image-banner {
@@ -296,7 +311,7 @@ blockquote {
 }
 
 .quote-source:before {
-  content:"— ";
+  content:"â€” ";
 }
 
 /*
