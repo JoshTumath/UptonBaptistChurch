@@ -45,7 +45,7 @@ footer > div {
   -moz-box-sizing:border-box;
   box-sizing:border-box;
   margin:auto;
-  width:976px;
+  width:960px;
 }
 
 footer address > div {
@@ -59,7 +59,7 @@ footer address > div + div {
 }
 
 footer address:before {
-  width:720px;
+  width:704px;
   height:224px; /* IE8 */
   height:14rem;
   background-image:url("../images/map.png");
@@ -79,7 +79,7 @@ footer address:before {
   box-sizing:border-box;
   margin-right:auto;
   margin-left:auto;
-  width:976px;
+  width:960px;
 }
 
 /*
@@ -90,7 +90,7 @@ footer address:before {
   box-sizing:border-box;
   margin-right:auto;
   margin-left:auto;
-  width:976px;
+  width:960px;
   min-height:23em;
 }
 
@@ -185,14 +185,14 @@ footer address:before {
   margin-left:auto;
   padding:0 0 16px; /* IE8 */
   padding:0 0 1rem;
-  width:976px;
+  width:960px;
 }
 
 .promos section {
   display:inline-block;
   margin:16px 16px 0 0; /* IE8 */
   margin:1rem 16px 0 0;
-  width:282.666px;
+  width:277px;
   vertical-align:middle;
 }
 
@@ -248,7 +248,7 @@ footer address:before {
   box-sizing:border-box;
   margin-right:auto;
   margin-left:auto;
-  width:976px;
+  width:960px;
 }
 
 #sermons p {
