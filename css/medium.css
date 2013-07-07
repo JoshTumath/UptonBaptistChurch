@@ -143,6 +143,30 @@ main nav li {
 }
 
 /*
+ * Promos
+ */
+.promos {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  margin-right:16px; /* IE8 */
+  margin-right:1rem;
+  margin-bottom:-16px; /* IE8 */
+  margin-bottom:-1rem;
+  margin-left:16px; /* IE8 */
+  margin-left:1rem;
+  padding:0 0 16px; /* IE8 */
+  padding:0 0 1rem;
+}
+
+.promos section {
+  display:inline-block;
+  margin:16px 16px 0 0; /* IE8 */
+  margin:1rem 16px 0 0;
+  width:277px;
+  vertical-align:middle;
+}
+
+/*
  * Sermons
  */
 #sermon-player {
