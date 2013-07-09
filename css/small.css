@@ -66,7 +66,6 @@ header a {
 header nav a {
   margin:0 0.5rem 0.5rem 0; /* IE8 */
   margin:0 0.5rem 0.5rem 0;
-  background:white;
   line-height:32px; /* IE8 */
   line-height:2rem;
   transition:background-color 200ms, color 200ms, transform 200ms;
@@ -76,13 +75,16 @@ header nav :link:hover,
 header nav :visited:hover,
 header nav :link:focus,
 header nav :visited:focus {
-  background:#4488CC;
-  color:white;
+  /*background:#4488CC;
+  color:white;*/
+  color:#4488CC;
 }
 
 header nav :link:active,
 header nav :visited:active {
-  transform:scale(0.9);
+  /*transform:scale(0.9);*/
+  background:#4488CC;
+  color:white;
 }
 
 header nav :local-link {
@@ -311,7 +313,7 @@ blockquote {
 }
 
 .quote-source:before {
-  content:"â€” ";
+  content:"Ã¢â‚¬â€ ";
 }
 
 /*
