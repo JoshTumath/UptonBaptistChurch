@@ -157,10 +157,14 @@ footer address:before {
 
 .heading-banner > h1 {
   bottom:50%;
+  font-size:48px; /* IE8 */
+  font-size:3rem;
 }
 
 .heading-banner > p {
   top:50%;
+  font-size:32px; /* IE8 */
+  font-size:2rem;
 }
 
 #motto-text {

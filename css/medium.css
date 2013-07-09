@@ -118,28 +118,28 @@ main nav li {
  */
 .heading-banner {
   position:relative;
-  padding-top:64px; /* IE8 */
-  padding-top:4rem;
-  padding-bottom:64px; /* IE8 */
-  padding-bottom:4rem;
+  padding-top:96px; /* IE8 */
+  padding-top:6rem;
+  padding-bottom:96px; /* IE8 */
+  padding-bottom:6rem;
   background-image:url("../images/banners/church@medium.jpg");
 }
 
-.heading-banner > h1 {
-  font-size:48px; /* IE8 */
+/* .heading-banner > h1 {
+  font-size:48px; / IE8 /
   font-size:3rem;
 }
 
 .heading-banner > p {
-  font-size:32px; /* IE8 */
+  font-size:32px; / IE8 /
   font-size:2rem;
-}
+} */
 
 #motto-text {
-  margin-top:64px; /* IE8 */
-  margin-top:4rem;
-  margin-bottom:-64px; /* IE8 */
-  margin-bottom:-4rem;
+  margin-top:96px; /* IE8 */
+  margin-top:6rem;
+  margin-bottom:-96px; /* IE8 */
+  margin-bottom:-6rem;
 }
 
 /*
